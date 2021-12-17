@@ -136,6 +136,8 @@
     width: 300px;
     border-radius: 5px;
     border: 2px solid rgb(214, 207, 207);
+    background-color: rgba(34, 32, 32, 0.993);
+    color: white;
 }
 .modal button{
     padding: 10px 30px;
