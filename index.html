@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Papers & Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="rock">
+                <img src="/SVGs/576663.svg" alt="Rock">
+            </div>
+            <div class="paper">
+                <img src="/SVGs/paper.svg" alt="Paper">
+            </div>
+            <div class="ampersand">
+                &amp;
+            </div>
+            <div class="scissor">
+                <img src="/SVGs/scissors.svg" alt="Scissors">
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="score-heading">
+            <p>Score</p>
+        </div>
+        <div class="result">
+            <span class="gameResult"></span>
+        </div>
+        <div class="score">
+            <div id="userScore">
+                <p>You: <span id="userScoreCount">0</span></p>
+                <div class="userChoice"></div>
+            </div>
+            <div id="computerScore">
+                <p>Computer: <span id="computerScoreCount">0</span></p>
+                <div class="computerScore"></div>
+            </div>
+        </div>
+    </div>
+    <div class="game">
+        <div id="rock" dataValue="1" textValue="Rock" onclick="reply_Click(this.id)">
+            <img src="/SVGs/576663.svg" alt="Rock">
+        </div>
+        <div id="paper" dataValue="1" textValue="Paper" onclick="reply_Click(this.id)">
+            <img src="/SVGs/paper.svg" alt="Paper">
+        </div>
+        <div id="scissor" dataValue="1" textValue="Scissor" onclick="reply_Click(this.id)">
+            <img src="/SVGs/scissors.svg" alt="Scissors">
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; All rights reserved.</p>
+        <div class="contact">
+            <a href="https://github.com/alimustafa-poder" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <div id="modal" class="modalContainer center">
+        <div class="modal">
+            <div class="modalText"></div>
+        <div class="modalBtn"><button id="mybtn">Retry</button></div>
+        </div>
+    </div>
+        <script src="game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Header Start */
+.header{
+    background-color: rgba(12, 12, 12, 0.842);
+    border-bottom: 2px solid white;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+.paper img,.rock img,.scissor img{
+    height: 100px;
+    width: 200px;
+    padding: 30px 0px;
+    cursor: pointer;
+}
+.scissor{
+    transform: rotate(160deg);
+}
+.ampersand{
+    font-size: 70px;
+    padding: 30px 40px;
+    transform: skew(-20deg);
+}
+/* Header End */
+/* Container Start */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(12, 12, 12, 0.692);
+    padding: 30px 0px;
+}
+.score-heading p{
+    font-size: 50px;
+}
+.score{
+    display: flex;
+    gap: 500px;
+    align-items: flex-start;
+}
+#userScore p, #computerScore p{
+    font-size: 30px;
+    font-weight: bold;
+}
+/* Container End */
+/* Game Start */
+.game{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(12, 12, 12, 0.692);
+    gap: 40px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+#rock,#paper,#scissor{
+    display: flex;
+    border: 2px solid rgb(190, 174, 174);
+    height: 400px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#rock img,#paper img,#scissor img,.computerScore img,.userChoice img{
+    max-height: 100px;
+    max-width: 300px
+}
+#rock:hover,#paper:hover,#scissor:hover{
+    box-shadow: 0px 0px 20px white;
+    transition: cubic-bezier(.51,.43,.35,.61);
+    transform: translateY(-5px);
+    transition-duration: 250ms;
+}
+/* Game End */
+/* Game Result */
+.gameResult{
+    font-size: 20px;
+}
+#computerScore, #userScore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.computerScore,.userChoice{
+    padding: 40px 0px ;
+}
+/* Game Result End */
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    padding: 30px 0px;
+    border-top: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+.contact a{
+    text-decoration: none;
+}
+.contact i{
+    color:rgb(0, 0, 0);
+    font-size: 40px;
+}
+/* Footer End */
+/* Modal Start */
+#modal{
+    display: none;
+}
+.modalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: cubic-bezier(.51,.43,.35,.61);
+    transition-duration: 250ms;
+    
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 20px;
+    background-color: rgba(116, 116, 116, 0.329);
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid rgb(214, 207, 207);
+}
+.modal button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(223, 199, 199, 0.74);
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.945);
+    color: white;
+}
+.modalText{
+    font-size: 20px;
+}
+.modal button:hover{
+    transform: translateY(-5px);
+    transition: cubic-bezier(.51,.43,.35,.61);
+    transition-duration: 250ms;
+}
+.center {
+    position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }
+  /* Modal End */
