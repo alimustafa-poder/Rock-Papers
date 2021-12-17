@@ -90,8 +90,8 @@ function play(user, computer) {
         computerCount++;
     }
     else if (user === "rock" && computer === "paper") {
-        document.getElementsByClassName("gameResult")[0].innerText = "Rock beats paper.";
-        userCount++;
+        document.getElementsByClassName("gameResult")[0].innerText = "Paper beats rock.";
+        computerCount++;
     }
     else if (user === "paper" && computer === "rock") {
         document.getElementsByClassName("gameResult")[0].innerText = "Paper beats rock.";
