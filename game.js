@@ -6,7 +6,6 @@ function reply_Click(textValue) {
 
 
     clickCount++;
-    console.log(clickCount);
     let userChoice = document.getElementById(textValue).getAttribute("textValue").toLocaleLowerCase();
 
 
@@ -27,9 +26,7 @@ function reply_Click(textValue) {
 
     computerPlay();
     play(userChoice, computerChoice);
-    console.log("User", userCount);
-    console.log("Computer", computerCount);
-    console.log(document.getElementById("computerScoreCount").innerText = computerCount);
+    document.getElementById("computerScoreCount").innerText = computerCount;
     document.getElementById("userScoreCount").innerText = userCount;
 
     if (computerCount == 5) {
